@@ -6,9 +6,16 @@ Application.config({
 	resources: {
 		cache: true
 	},
+	
+	model: {
+		// 'url': 'http://zapweb.siempresistemas.info'
+		'url': 'http://localhost:12160'
+	},
 
     ajax: {
-        contentType: 'application/json'
+        contentType: 'application/json',
+        credentials: true,
+        cors: true
     },
 
     textbox: {
