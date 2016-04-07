@@ -94,8 +94,9 @@ PI.Url.add('Sindico',       'Modules', '/sindico');
 PI.Url.add('Condominio',    'Modules', '/condominio');
 PI.Url.add('Administradora','Modules', '/administradora');
 PI.Url.add('Agenda',        'Modules', '/agenda');
+PI.Url.add('Prospecto',     'Modules', '/prospecto');
 
 /**
 * Service
 */
-PI.Service.add('Agenda', 'Administradora', 'Condominio', 'Sindico', 'Unidade', 'Permissao', 'Usuario', 'Fornecedor', 'Financeiro', 'RealTime', 'Notificacao');
+PI.Service.add('Agenda', 'Administradora', 'Condominio', 'Sindico', 'Unidade', 'Permissao', 'Usuario', 'Fornecedor', 'Financeiro', 'RealTime', 'Notificacao', 'Prospecto');

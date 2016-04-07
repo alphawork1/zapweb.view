@@ -1,0 +1,44 @@
+.prospecto-conteiner-info {
+	padding: 10px 50px;
+	width: 94%;
+	background: #f2f2f2;
+	margin-left: 28px;
+}
+
+.prospecto-label-nome-condominio {
+	font-size: 36px;
+	color: #888;
+	font-weight: 600;
+}
+
+.prospecto-label-nome-sindico {
+	font-size: 26px;
+	font-weight: 500;
+}
+
+.prospecto-table {
+	width: 100%;
+	margin-top:10px; 
+}
+
+.prospecto-table tr td{
+	border: none;
+	padding: 5px;
+	color: #888;
+	font-size: 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+.prospecto-table tr td label{
+	margin-left: 5px;
+	font-weight: 300;
+}
+
+.propecto-title-table{
+	color:#D9534F;
+}
+
+.prospecto-buttom-modelos{
+	margin-top: 12px;
+}
+
