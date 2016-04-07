@@ -54,8 +54,8 @@ Application.config({
 // PI.Url.add('App', 'https://s3-sa-east-1.amazonaws.com/elasticbeanstalk-sa-east-1-685799640328/zapweb');
 
 PI.Url.add('BaseUrl',       PI.Url.create(window.location.toString()).href());
-PI.Url.add('Public',        'BaseUrl', '/Public');
-PI.Url.add('App',           'BaseUrl', '/Public');
+PI.Url.add('Public',        'BaseUrl', '/public');
+PI.Url.add('App',           'BaseUrl', '/public');
 PI.Url.add('Modules',       'App', '/modules');
 PI.Url.add('Lib',           'App', '/lib');
 PI.Url.add('Logo',          'Public', '/files/logo.png');
