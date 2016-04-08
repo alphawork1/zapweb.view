@@ -34,11 +34,27 @@
 	font-weight: 300;
 }
 
+.prospecto-table tr td ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+.prospecto-table tr td ul li{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
 .propecto-title-table{
 	color:#D9534F;
 }
 
 .prospecto-buttom-modelos{
 	margin-top: 12px;
+}
+
+.prospecto-inputs{
+	background-color:transparent; 
+	border: none;
 }
 
