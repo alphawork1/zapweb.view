@@ -26,7 +26,8 @@
 	padding: 5px;
 	color: #888;
 	font-size: 15px;
-	border-bottom: 1px solid #ddd;
+	border: 1px dashed #ddd;
+	padding: 7px;
 }
 
 .prospecto-table tr td label{
@@ -47,14 +48,25 @@
 
 .propecto-title-table{
 	color:#D9534F;
+	border-bottom: 2px dashed #ddd;
+	padding-bottom: 16px;
+	font-weight: bold;
 }
 
 .prospecto-buttom-modelos{
 	margin-top: 12px;
 }
 
-.prospecto-inputs{
-	background-color:transparent; 
+.prospecto-inputs{ 
 	border: none;
+	background: #f8f8f8;
+	padding: 5px;
+	width: 129px;
+}
+
+.prospect-conteiner-inputs {
+	border: none;
+	background: #f8f8f8;
+	padding: 8px 10px;
 }
 
