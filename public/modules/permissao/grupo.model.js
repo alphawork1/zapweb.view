@@ -12,7 +12,7 @@
             this.base.init('/GrupoPermissao');
         },
 
-        onValid: function () {
+        validations: function () {
             return {
                 'Nome': new Mvc.Model.Validator.Required('O nome do grupo é obrigatório')
             };

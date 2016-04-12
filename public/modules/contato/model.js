@@ -12,7 +12,7 @@
             this.base.init('/Contato');
         },
 
-        onValid: function () {
+        validations: function () {
             return {
                 //'': new Mvc.Model.Validator.Required('')
             };

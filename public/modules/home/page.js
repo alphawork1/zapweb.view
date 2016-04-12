@@ -93,7 +93,7 @@
             }	        
 
             this.pesquisar.add(new UI.Menu.Separador());
-            this.pesquisar.add(new UI.Menu.Item({ label: 'Condomínio', href: '!Condominio/Pesquisar', icon: 'fa fa fa-building text-black', labelRight: 'Ctrl-H-A' }));
+            this.pesquisar.add(new UI.Menu.Item({ label: 'Prospecto', href: '!Prospecto/Pesquisar', icon: 'fa fa fa-building text-black', labelRight: 'Ctrl-H-A' }));
 
             //relatorio
             if (Usuario.Current.hasPermissao('RELATORIO_DESPESA_UNIDADE')) {

@@ -12,7 +12,7 @@
             this.base.init('/Despesa');
         },
 
-        onValid: function () {
+        validations: function () {
             return {
                 'Data': new Mvc.Model.Validator.Required('Data de compra é obrigatório'),
                 'Numero': new Mvc.Model.Validator.Required('Número de compra é obrigatório'),

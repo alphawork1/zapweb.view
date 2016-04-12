@@ -12,7 +12,7 @@
             this.base.init('/Notificacao');
         },
 
-        onValid: function () {
+        validations: function () {
             return {
                 //'': new Mvc.Model.Validator.Required('')
             };

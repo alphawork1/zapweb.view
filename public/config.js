@@ -9,7 +9,7 @@ Application.config({
 	
 	model: {
 		// 'url': 'http://zapweb.siempresistemas.info'
-		'url': 'http://localhost:12160'
+		'url': 'http://localhost:5921'
 	},
 
     ajax: {

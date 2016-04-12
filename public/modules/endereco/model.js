@@ -12,7 +12,7 @@
             this.base.init('/Endereco');
         },
 
-        onValid: function () {
+        validations: function () {
             return {
                 //'': new Mvc.Model.Validator.Required('')
             };

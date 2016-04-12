@@ -28,7 +28,9 @@
         events: {
 
             '@sair click': function () {
-                Auth.Model.create().sair();
+                Auth.Model.create().sair().ok(function(){
+                    window.location = '/';
+                });;
             },
 
             '@configuracao click': function () {

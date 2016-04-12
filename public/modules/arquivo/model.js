@@ -12,7 +12,7 @@
             this.base.init('/Arquivo');
         },
 
-        onValid: function () {
+        validations: function () {
             return {
                 //'': new Mvc.Model.Validator.Required('')
             };

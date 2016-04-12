@@ -12,7 +12,7 @@
             this.base.init('/Fornecedor');
         },
 
-        onValid: function () {
+        validations: function () {
             return {
                 'RazaoSocial': new Mvc.Model.Validator.Required('A Razão Social é obrigatório')
             };

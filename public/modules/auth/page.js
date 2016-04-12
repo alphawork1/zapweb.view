@@ -56,7 +56,7 @@
             this.entrar.setLabel('Entrando ...').lock();
 
             auth.entrar().ok(function () {
-                window.location = "/home";
+                window.location = "/";
             }).error(function () {
                 self.entrar.setLabel(label).unlock();
                 self.setMessage('Usuário ou Senha Incorreta');

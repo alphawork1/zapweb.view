@@ -15,7 +15,7 @@
             this.Unidade = new Unidade.Model(this.Unidade);
         },
 
-        onValid: function () {
+        validations: function () {
             return {
                 'Nome': new Mvc.Model.Validator.Required('O nome do usuário é obrigatório'),
                 'Email': new Mvc.Model.Validator.Required('O email do usuário é obrigatório')

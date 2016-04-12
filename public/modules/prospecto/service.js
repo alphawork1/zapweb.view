@@ -11,7 +11,7 @@ yum.define([
 
 		routes: {
 			
-			'Prospecto': function(){
+			'Prospecto/Pesquisar': function(){
 				setTimeout(function() {
 					var page = new Prospecto.Page({
 						model: new Prospecto.Model()

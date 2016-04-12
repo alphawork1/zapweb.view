@@ -13,7 +13,7 @@
             this.base.init('/unidade');
         },
 
-        onValid: function () {
+        validations: function () {
             return {
                 'Nome': new Mvc.Model.Validator.Required('O nome da unidade é obrigatório'),
                 'Tipo': new Mvc.Model.Validator.Required('O tipo da unidade é obrigatório'),

@@ -14,9 +14,7 @@ yum.define([
         },
 
         viewDidLoad: function () {
-            var auth = new Auth.Page();
-
-            auth.render(this.view.body);
+            
 
             this.base.viewDidLoad();
         },

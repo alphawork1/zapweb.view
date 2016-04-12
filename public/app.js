@@ -2,6 +2,7 @@
 	PI.Url.create('Public', '/ui.config.js'),
     PI.Url.create('Public', '/app.css'),
     PI.Url.create('Home', '/page.js'),
+    PI.Url.create('Auth', '/page.js'),
     PI.Url.create('UI', '/progress/progress.js')
 ], function (html) {
     
@@ -11,17 +12,26 @@
             this.progress = new UI.Progress({
                 color: '#007acc'
             });
-
         },
 
         viewDidLoad: function () {
-            this.home = new Home.Page();
-
-            this.home.render(this.view.body);
-
-            $('#progress').remove();
-
-            this.base.viewDidLoad();
+            var self = this;
+            
+            Auth.Model.create().isAutenticate().ok(function(){
+                
+                self.home = new Home.Page();
+                self.home.render(self.view.body);
+               
+               self.base.viewDidLoad();     
+            }).error(function(){
+                
+                self.auth = new Auth.Page();
+                self.auth.render(self.view.body);
+                
+                self.base.viewDidLoad();
+            }).done(function(){
+                $('#progress').remove();
+            });            
         },
 
         progressLoad: function (total) {

@@ -12,7 +12,7 @@
             this.base.init('/Financeiro');
         },
 
-        onValid: function () {
+        validations: function () {
             return {
                 'CentroCusto': new Mvc.Model.Validator.Required('Centro de custo é obrigatório'),
                 'Descricao': new Mvc.Model.Validator.Required('Descrição  é obrigatória'),

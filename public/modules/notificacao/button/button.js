@@ -2,7 +2,8 @@
     PI.Url.create('Notificacao', '/button/button.html'),
     PI.Url.create('Notificacao', '/button/button.css'),
 	PI.Url.create('Notificacao', '/popup/popup.js'),
-    PI.Url.create('Notificacao', '/popup/item.js')
+    PI.Url.create('Notificacao', '/popup/item.js'),
+    PI.Url.create('Notificacao', '/model.js')
 ], function (html) {
 
     Class('Notificacao.Button').Extend(Mvc.Component).Body({

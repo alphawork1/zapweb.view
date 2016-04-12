@@ -1,12 +1,5 @@
-yum.define([
-	PI.Url.create('UI.RichText', '/richtext.html'),
-	PI.Url.create('UI.RichText', '/richtext.css'),
-	PI.Url.create('UI.RichText', '/ckeditor.js'),
-	PI.Url.create('UI.RichText', '/pt-br.js'),
-	PI.Url.create('UI.RichText', '/styles.js'),
-	PI.Url.create('UI.RichText', '/config.js'),
-	PI.Url.create('UI.RichText', '/skins/office2013/editor.css'),
-	PI.Url.create('UI.RichText', '/jquery.js')
+yum.define([	
+	
 ], function(html){
 	
 	/**
@@ -15,7 +8,7 @@ yum.define([
 	Class('UI.RichText').Extend(Mvc.Component).Body({
 	
 		instances: function(){
-			this.view = new Mvc.View(html);
+			this.view = new Mvc.View('<div><textarea at="editor" id="@{id}"></textarea ></div>');
 
 			this.id = PI.Util.UUID();
 		},
@@ -35,7 +28,11 @@ yum.define([
 		 * @return {this}
 		 */
 		set: function(text){
-		    CKEDITOR.instances[ this.id ].setData( text );
+			var self = this;
+
+			setTimeout(function(){				
+		    	CKEDITOR.instances[ self.id ].setData( text );
+			}, 1000);
 
 		    return this;
 		},

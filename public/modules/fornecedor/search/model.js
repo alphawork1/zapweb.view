@@ -12,7 +12,7 @@ yum.define([
             this.base.init('/Fornecedor');
         },
 
-        onValid: function () {
+        validations: function () {
             return {
                 //'': new Mvc.Model.Validator.Required('')
             };

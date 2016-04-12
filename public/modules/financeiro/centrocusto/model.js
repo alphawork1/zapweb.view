@@ -12,7 +12,7 @@
             this.base.init('/CentroCusto');
         },
 
-        onValid: function () {
+        validations: function () {
             return {
                 'Nome': new Mvc.Model.Validator.Required('Nome é obrigatório')
             };

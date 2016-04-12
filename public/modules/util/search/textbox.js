@@ -39,7 +39,7 @@
             this.search.view.input.autocomplete({
                 appendTo: this.view.element,
 
-                serviceUrl: this.serviceUrl,
+                serviceUrl: Application.getConfig('model.url') + this.serviceUrl,
 
                 paramName: this.paramName,
 

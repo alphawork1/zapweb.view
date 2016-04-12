@@ -12,7 +12,7 @@ yum.define([
             this.base.init('/');
         },
 
-        onValid: function () {
+        validations: function () {
             return {
                 'Dia': new Mvc.Model.Validator.Required('Dia é obrigatório'),
                 'Cliente': new Mvc.Model.Validator.Required('Cliente é obrigatório'),

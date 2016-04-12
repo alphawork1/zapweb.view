@@ -12,7 +12,7 @@ yum.define([
 			this.base.init('/ReceitaRelatorio');
 		},
 
-		onValid: function () {
+		validations: function () {
 			return {
 				//'': new Mvc.Model.Validator.Required('')
 			};

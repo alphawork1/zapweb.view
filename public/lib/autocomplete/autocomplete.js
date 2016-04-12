@@ -580,7 +580,11 @@ yum.define([
                     url: serviceUrl,
                     data: params,
                     type: options.type,
-                    dataType: options.dataType
+                    dataType: options.dataType,
+                    crossDomain: Application.getConfig('ajax.cors') || false,			
+                    xhrFields: {
+                        withCredentials: Application.getConfig('ajax.credentials') || false
+                    }
                 };
 
                 $.extend(ajaxSettings, options.ajaxSettings);
