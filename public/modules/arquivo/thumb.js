@@ -49,7 +49,7 @@
 
             '@img click': function () {
                 if(this.arquivo.Tipo.indexOf('word') > 0){
-                    PI.Url.to('BaseUrl', '/Arquivo/Download?hash=' + this.arquivo.Hash);
+                    PI.Url.to( Application.getConfig('model.url') + '/Arquivo/Download?hash=' + this.arquivo.Hash);
                 }else{
                     var preview = new Arquivo.Preview({
                         arquivo: this.arquivo
@@ -63,7 +63,7 @@
                 var modal = new Arquivo.Modal({
                     showBackground: false,
                     image: {
-                        url: PI.Url.create('BaseUrl', '/Arquivo/Thumb?hash=' + this.arquivo.Hash).getUrl(),
+                        url: Application.getConfig('model.url') + '/Arquivo/Thumb?hash=' + this.arquivo.Hash,
                         width: 550
                     }
                 });
@@ -74,12 +74,12 @@
             },
 
             '{visualizar} click': function () {
-                this.view.link.attr('href', PI.Url.create('BaseUrl', '/Arquivo/Visualizar?hash=' + this.arquivo.Hash).getUrl());
+                this.view.link.attr('href', Application.getConfig('model.url') + '/Arquivo/Visualizar?hash=' + this.arquivo.Hash);
                 this.view.link[0].click();
             },
 
             '{baixar} click': function () {
-                PI.Url.to('BaseUrl', '/Arquivo/Download?hash=' + this.arquivo.Hash);
+                PI.Url.to( Application.getConfig('model.url') + '/Arquivo/Download?hash=' + this.arquivo.Hash);
             },
 
             '{excluir} click': function () {

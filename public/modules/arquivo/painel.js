@@ -32,7 +32,7 @@
 
             this.upload = new UI.Upload({
                 label: 'Enviar Arquivo',
-                baseUrl: PI.Url.create('BaseUrl', '/arquivo').getUrl(),
+                baseUrl: Application.getConfig('model.url') + '/arquivo',
                 classes: 'btn btn-sm button cinza',
                 config: {
                     extensions: this.extensions,

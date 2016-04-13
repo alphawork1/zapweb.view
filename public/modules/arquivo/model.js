@@ -30,17 +30,16 @@
             }else if (this.Tipo == 'application/pdf') {
                 return PI.Url.create('Arquivo', '/pdf.png').getUrl();
             }else{
-                return PI.Url.create('BaseUrl', '/Arquivo/Thumb?hash=' + this.Hash).getUrl();
+                return Application.getConfig('model.url') +  '/Arquivo/Thumb?hash=' + this.Hash;
             }
         },
 
         getUrl: function(){
             if (this.Tipo == 'application/pdf') {
-                return PI.Url.create('BaseUrl', '/Arquivo/Visualizar?hash=' + this.Hash).getUrl();
+                return Application.getConfig('model.url') + '/Arquivo/Visualizar?hash=' + this.Hash;
             }else{
-                return PI.Url.create('BaseUrl', '/Arquivo/Thumb?hash=' + this.Hash).getUrl();
-            }
-            return ;
+                return Application.getConfig('model.url') + '/Arquivo/Thumb?hash=' + this.Hash;
+            }            
         },
 
         actions: {

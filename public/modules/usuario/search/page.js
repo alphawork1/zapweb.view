@@ -10,7 +10,7 @@
         instances: function () {
             this.view = new Mvc.View(html);
 
-            this.search = new UI.TextBox({
+            this.search1 = new UI.TextBox({
                 placeholder: 'Pesquisar'
             });
 
@@ -22,6 +22,8 @@
             this.model = new Usuario.Model();
             
             this.title = 'Pesquisar Usuário';
+            
+            this.voltar = new UI.Button();
         },
 
         viewDidLoad: function () {
@@ -46,8 +48,8 @@
 
         events: {
 
-            '{search} keyup': function () {
-                $.TableFilter(this.table.view.table, this.search.get());
+            '{search1} keyup': function () {
+                $.TableFilter(this.table.view.table, this.search1.get());
             }
 
         }

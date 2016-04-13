@@ -89,6 +89,10 @@
                 error: function (jqXHR, textStatus, errorThrown) {
                     self.anime(false);
                     self.event.trigger('error', 'Error desconhecido');
+                },
+                crossDomain: Application.getConfig('ajax.cors') || false,			
+                xhrFields: {
+                    withCredentials: Application.getConfig('ajax.credentials') || false
                 }
             });
         },
