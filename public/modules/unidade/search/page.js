@@ -20,6 +20,8 @@
             });
             
             this.title = 'Pesquisar Unidade';
+            
+            this.voltar = new UI.Button();
         },
 
         viewDidLoad: function () {
