@@ -26,6 +26,10 @@
 
             return model;
         },
+        
+        getFantasia: function(){
+            return this.Fantasia.length == 0 ? this.RazaoSocial : this.Fantasia;
+        },
 
         actions: {
             'get': '/get?Id=:Id'

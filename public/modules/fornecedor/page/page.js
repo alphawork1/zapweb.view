@@ -74,7 +74,7 @@
                 this.model.get().ok(function (model) {
                     self.model = model;
                     
-                    self.breadcumb.setTitle( model.Nome );
+                    self.breadcumb.setTitle( model.getFantasia()  );
                     
                     self.injectModelToView(model);
                 }).error(function (message) {
