@@ -113,7 +113,7 @@
 
                 this.saveModel(this.model).ok(function (m) {
 
-	                PI.Url.Hash.to('Receita/Editar/' + m.Id);
+	                PI.Url.Hash.to('!Receita/Editar/' + m.Id);
 
                     Alert.info('Sucesso', 'Receita salva com sucesso');
                 });
@@ -126,7 +126,7 @@
 
                     if (b) {
                         self.model.excluir().ok(function(){
-                           PI.Url.Hash.to('Receita/Pesquisar'); 
+                           PI.Url.Hash.to('!Receita/Pesquisar'); 
                         });
                     };
 

@@ -45,13 +45,4 @@
 
     });
 
-    Usuario.Current = new Usuario.Model(CurrentUsuario);
-    
-    if (PI.Cookie.get('unidade') == null) {
-        Unidade.Model.persistir( Usuario.Current.Unidade );
-        Unidade.Current = Usuario.Current.Unidade;
-    }else{
-        Unidade.Current = new Unidade.Model( JSON.parse( PI.Cookie.get('unidade') ) );
-    }
-
 });

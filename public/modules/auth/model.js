@@ -21,7 +21,7 @@
         actions: {
             'entrar': '/entrar',
             'sair': '/sair',
-            'isAutenticate': '/IsAutenticate'
+            'isAutenticate': '/IsAutenticate?classname=Usuario.Model'
         }
 
     });

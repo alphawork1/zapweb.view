@@ -221,7 +221,7 @@
                     
                     Alert.info('Sucesso', 'Despesa salva com sucesso', function(){
 
-                        PI.Url.Hash.to('Despesa/Editar/' + m.Id);
+                        PI.Url.Hash.to('!Despesa/Editar/' + m.Id);
     
                     });
 
@@ -255,7 +255,7 @@
                 
                     Alert.info('Sucesso', 'Despesa remetida para análise', function(){
 
-                        PI.Url.Hash.to('Despesa/Editar/' + m.Id);
+                        PI.Url.Hash.to('!Despesa/Editar/' + m.Id);
     
                     });
 
@@ -268,7 +268,7 @@
                     
                     Alert.info('Sucesso', 'Despesa paga', function(){
 
-                        PI.Url.Hash.to('Despesa/Editar/' + m.Id);
+                        PI.Url.Hash.to('!Despesa/Editar/' + m.Id);
     
                     });
                 });
@@ -288,7 +288,7 @@
 
                         Alert.info('Sucesso', 'Despesa não paga', function(){
 
-                            PI.Url.Hash.to('Despesa/Editar/' + m.Id);
+                            PI.Url.Hash.to('!Despesa/Editar/' + m.Id);
         
                         });
 
@@ -303,7 +303,7 @@
                     
                     Alert.info('Sucesso', 'Despesa autorizada', function(){
 
-                        PI.Url.Hash.to('Despesa/Editar/' + m.Id);
+                        PI.Url.Hash.to('!Despesa/Editar/' + m.Id);
     
                     });
                 });
@@ -324,7 +324,7 @@
 
                         Alert.info('Sucesso', 'Despesa não autorizada', function(){
 
-                            PI.Url.Hash.to('Despesa/Editar/' + m.Id);
+                            PI.Url.Hash.to('!Despesa/Editar/' + m.Id);
         
                         });
 

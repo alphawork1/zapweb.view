@@ -43,13 +43,28 @@
 	padding-left: 100px
 }
 
-.financeiro-relatorio-page-body .level-4,
-.financeiro-relatorio-page-body .level-5,
-.financeiro-relatorio-page-body .level-6,
-.financeiro-relatorio-page-body .level-7,
-.financeiro-relatorio-page-body .level-8,
-.financeiro-relatorio-page-body .level-9{
+.financeiro-relatorio-page-body .level-4{
 	font-weight: normal;
 	font-style: italic;
 	padding-left: 150px
+}
+
+.financeiro-relatorio-page-body .level-5{
+    font-weight: normal;
+	font-style: italic;
+    padding-left: 200px;
+}
+
+.financeiro-relatorio-page-body .level-6{
+    font-weight: normal;
+	font-style: italic;
+    padding-left: 250px;
+}
+
+.financeiro-relatorio-page-body .level-7,
+.financeiro-relatorio-page-body .level-8,
+.financeiro-relatorio-page-body .level-9{
+    font-weight: normal;
+	font-style: italic;
+    padding-left: 300px;
 }

@@ -17,8 +17,17 @@
         viewDidLoad: function () {
             var self = this;
             
-            Auth.Model.create().isAutenticate().ok(function(){
+            Auth.Model.create().isAutenticate().ok(function(usuario){
                 
+                Usuario.Current = usuario;
+                
+                if (PI.Cookie.get('unidade') == null) {
+                    Unidade.Model.persistir( Usuario.Current.Unidade );
+                    Unidade.Current = Usuario.Current.Unidade;
+                }else{
+                    Unidade.Current = new Unidade.Model( JSON.parse( PI.Cookie.get('unidade') ) );
+                }
+
                 self.home = new Home.Page();
                 self.home.render(self.view.body);
                
