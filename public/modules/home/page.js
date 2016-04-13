@@ -68,7 +68,7 @@
 
             this.adicionar.add(new UI.Menu.Separador());
 
-            this.adicionar.add(new UI.Menu.Item({ label: 'Condomínio', href: '!Condominio/Adicionar', icon: 'fa fa fa-building text-black', labelRight: 'Ctrl-H-A' }));
+            this.adicionar.add(new UI.Menu.Item({ label: 'Ficha Cadastral', href: '!Condominio/Adicionar', icon: 'fa fa fa-building text-black', labelRight: 'Ctrl-H-A' }));
 
             //pesquisar
             if (Usuario.Current.hasPermissao('UPDATE_UNIDADE')) {
@@ -93,7 +93,7 @@
             }	        
 
             this.pesquisar.add(new UI.Menu.Separador());
-            this.pesquisar.add(new UI.Menu.Item({ label: 'Prospecto', href: '!Prospecto/Pesquisar', icon: 'fa fa fa-building text-black', labelRight: 'Ctrl-H-A' }));
+            this.pesquisar.add(new UI.Menu.Item({ label: 'Prospectado', href: '!Prospecto/Pesquisar', icon: 'fa fa fa-building text-black', labelRight: 'Ctrl-H-A' }));
 
             //relatorio
             if (Usuario.Current.hasPermissao('RELATORIO_DESPESA_UNIDADE')) {

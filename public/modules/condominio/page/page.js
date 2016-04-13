@@ -17,9 +17,24 @@
                 container: this.view
             });
 
+            this.dataCadastro = new UI.DateBox({
+                placeholder: 'Data do Cadastro',
+                dataModel: 'DataCadastro'
+            });
+
             this.nome = new UI.TextBox({
                 placeholder: 'Nome',
                 dataModel: 'Nome'
+            });
+
+            this.cadastrador = new UI.TextBox({
+                placeholder: 'Nome',
+                dataModel: 'Cadastrador'
+            });
+
+            this.colaborador = new UI.TextBox({
+                placeholder: 'Nome',
+                dataModel: 'Colaborador'
             });
 
             this.qtdeApto = new UI.TextBox({

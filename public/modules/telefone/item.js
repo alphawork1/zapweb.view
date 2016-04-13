@@ -27,6 +27,7 @@
             this.tipo.add(new UI.Selection.Item({ id: 3, label: 'Celular', showMenu: false }))
             this.tipo.add(new UI.Selection.Item({ id: 4, label: 'Fax', showMenu: false }))
             this.tipo.add(new UI.Selection.Item({ id: 5, label: 'Whatsapp', showMenu: false }))
+            this.tipo.add(new UI.Selection.Item({ id: 6, label: 'Condomínio', showMenu: false }))
 
             this.base.viewDidLoad();
         },

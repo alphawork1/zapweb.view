@@ -9,7 +9,7 @@
     Class('App').Extend(Mvc.Component).Body({
 
         instances: function () {
-            this.progress = new UI.Progress({
+            this.progressBar = new UI.Progress({
                 color: '#007acc'
             });
         },
@@ -44,12 +44,12 @@
         },
 
         progressLoad: function (total) {
-
-            if (!this.progress.isRender()) {
-                this.progress.render($('#progress'));
+            
+            if(!this.progressBar.isRender()){
+                this.progressBar.render( $('#progress') );
             }
-
-            this.progress.total(total);
+            
+            this.progressBar.total(total);
         }
 
     });
