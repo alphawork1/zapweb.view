@@ -1,5 +1,6 @@
 yum.define([
 	PI.Url.create('Condominio', '/page/page.js'),
+	PI.Url.create('Condominio', '/prospectar/page.js'),
 	PI.Url.create('Condominio', '/search/page.js'),
 	PI.Url.create('Condominio', '/campanha/page/page.js'),
 	PI.Url.create('Condominio', '/campanha/model.js'),
@@ -14,6 +15,14 @@ yum.define([
 
 		routes: {
 			
+            'Condominio/Prospectar': function(){
+                var page = new Condominio.Prospectar.Page({
+                    
+                });
+                
+                app.home.setPage( page );
+            },
+            
 			'Condominio/Adicionar': function(){
 				setTimeout(function() {
 					var page = new Condominio.Page({

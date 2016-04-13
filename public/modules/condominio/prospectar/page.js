@@ -1,9 +1,9 @@
 yum.define([
-	PI.Url.create('Prospecto', '/page/page.html'),
-	PI.Url.create('Prospecto', '/page/page.css')
+	PI.Url.create('Condominio', '/prospectar/page.html'),
+	PI.Url.create('Condominio', '/prospectar/page.css')
 ], function (html) {
 
-    Class('Prospecto.Page').Extend(PI.Page).Body({
+    Class('Condominio.Prospectar.Page').Extend(PI.Page).Body({
 
         instances: function () {
             this.view = new Mvc.View(html);
@@ -17,9 +17,6 @@ yum.define([
 
         events: {
 		
-            '{unidadeLabel} click': function(){
-                this.showPopupSelectUnidade();
-            }
 		}
 
 
