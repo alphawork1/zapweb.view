@@ -161,6 +161,8 @@
                 append: false
             });
             
+            window.scrollTo(0, 0)
+            
             this.base.setPage(page);
         },
 
