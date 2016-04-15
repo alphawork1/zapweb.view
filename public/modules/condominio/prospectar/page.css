@@ -5,7 +5,7 @@
 }
 
 .condominio-prospectar-endereco {
-	font-size: 18px; 
+	font-size: 15px; 
 	margin-top: 0px;
 	color: #333;
 	margin: 5px 0px;
@@ -15,6 +15,15 @@
 .condominio-prospectar-panel-body {
 	font-size: 16px;
 }
+
+.condominio-prospectar-btn-upload {
+	margin-left: 1px;
+}
+
+.condominio-prospectar-acoes.app-opcoes-button {
+	display: inline-block;
+}
+
 
 /*.condominio-prospectar-panel-body table tr td ul {
 	margin: 0px;
