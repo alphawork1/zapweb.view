@@ -1,72 +1,30 @@
-.prospecto-conteiner-info {
-	padding: 10px 50px;
-	width: 94%;
-	background: #f2f2f2;
-	margin-left: 28px;
+.condominio-prospectar-sindico {
+	font-size: 25px; 
+	margin-top: 2px;
+	color: #A1A8AD;
 }
 
-.prospecto-label-nome-condominio {
-	font-size: 36px;
-	color: #888;
-	font-weight: 600;
-}
-
-.prospecto-label-nome-sindico {
-	font-size: 26px;
-	font-weight: 500;
-}
-
-.prospecto-table {
-	width: 100%;
-	margin-top:10px; 
-}
-
-.prospecto-table tr td{
-	border: none;
-	padding: 5px;
-	color: #888;
-	font-size: 15px;
-	border: 1px dashed #ddd;
-	padding: 7px;
-}
-
-.prospecto-table tr td label{
-	margin-left: 5px;
+.condominio-prospectar-endereco {
+	font-size: 18px; 
+	margin-top: 0px;
+	color: #333;
+	margin: 5px 0px;
 	font-weight: 300;
 }
 
-.prospecto-table tr td ul{
+.condominio-prospectar-panel-body {
+	font-size: 16px;
+}
+
+/*.condominio-prospectar-panel-body table tr td ul {
 	margin: 0px;
 	padding: 0px;
 }
 
-.prospecto-table tr td ul li{
+.condominio-prospectar-panel-body table tr td ul li {
 	margin: 0px;
 	padding: 0px;
-	list-style-type: none;
-}
-
-.propecto-title-table{
-	color:#D9534F;
-	border-bottom: 2px dashed #ddd;
-	padding-bottom: 16px;
-	font-weight: bold;
-}
-
-.prospecto-buttom-modelos{
-	margin-top: 12px;
-}
-
-.prospecto-inputs{ 
-	border: none;
-	background: #f8f8f8;
-	padding: 5px;
-	width: 129px;
-}
-
-.prospect-conteiner-inputs {
-	border: none;
-	background: #f8f8f8;
-	padding: 8px 10px;
-}
+	display: inline-block;
+	text-decoration: none;
+}*/
 
