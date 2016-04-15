@@ -329,3 +329,15 @@ body {
     }
 
 }
+
+.app-table{
+    border: 1px solid #abadb3;
+}
+
+.app-table thead tr{
+    background: #F9F9F9;
+}
+
+.app-table td{
+    border: 1px dotted #ddd !important;
+}
