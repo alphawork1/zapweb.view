@@ -1,12 +1,11 @@
 <div class="app-page unidade-page row">
     <div class="col-sm-1 col-sm-offset-1"></div>
     <div class="col-sm-7">
-        
         <div class="app-page-body">
-            
+
             <div tabbar-container="geral" class="app-page-tab-content">
                 <div at="rating" class="condominio-page-rating"></div>
-            
+
                 <h2 style="border: 0px; margin-bottom: 27px; margin-top:-15px; color: #205980;">
                     Condominio Agua do Mar Azul
                     <div class="condominio-prospectar-sindico">
@@ -16,7 +15,7 @@
                         Rua Terezina arruda, nº 25 Bairro Cardoso - Belo Horizonte - MG / CEP: 78566-251
                     </div>
                 </h2>
-                
+
                 <h5 style="padding-top: 7px; border-top: 1px dashed #ddd">1. Informações Cadastrais do Condomínio:</h5>
                 <div class="panel-body condominio-prospectar-panel-body">
                     <div class="form-group col-sm-5">
@@ -75,11 +74,11 @@
                                         john@example.com
                                     </td>
                                     <td>
-                                        <a href="skype:********?call"> 
+                                        <a href="skype:********?call">
                                             <span class="label bg-success">Celular:</span> 62 9632-6321
-                                         </a>   
+                                        </a>
                                         </br>
-                                        <a href="skype:********?call"> 
+                                        <a href="skype:********?call">
                                             <span class="label bg-success">Fixo:</span> 62 9632-6321
                                         </a>
                                     </td>
@@ -94,11 +93,11 @@
                                         mariobumbum@example.com
                                     </td>
                                     <td>
-                                        <a href="skype:********?call"> 
+                                        <a href="skype:********?call">
                                             <span class="label bg-success">Celular:</span> 62 9632-6321
                                         </a>
                                         </br>
-                                        <a href="skype:********?call"> 
+                                        <a href="skype:********?call">
                                             <span class="label bg-success">Fixo:</span> 62 9632-6321
                                         </a>
                                     </td>
@@ -113,18 +112,31 @@
                     <table class="flat-table">
                         <thead>
                             <tr>
-                                <th>Tipo</th>
-                                <th style="width:25%">Descrição</th>
-                                <th style="width:23%">Variavel</th>
-                                <th style="width:17%">Ações</th>
+                                <th style="width:25%">Tipo</th>
+                                <th style="width:50%">Descrição</th>
+                                <th style="width:25%">Variavel</th>
+                                <!--<th style="width:17%">Ações</th>-->
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Valor</td>
-                                <td>R$ 201,66</td>
-                                <td>_Valor_</td>
                                 <td>
+                                    <div class="ui-textbox" pillar-view-controller="true">
+                                        <input type="text" class="form-control" value="Valor" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="ui-textbox" pillar-view-controller="true">
+                                        <input type="text" class="form-control" value="R$ 201,66" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="ui-textbox" pillar-view-controller="true">
+                                        <input type="text" class="form-control" value="_Valor_" />
+                                    </div>
+                                </td>
+
+                                <!--<td>
                                     <div class="condominio-prospectar-acoes app-opcoes-button">
                                         <div class="ui-button">
                                             <button at="button" title="" class="btn btn-sm button cinza">
@@ -140,7 +152,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                </td>
+                                </td>-->
                             </tr>
                         </tbody>
                     </table>
@@ -156,7 +168,7 @@
 
 
                 <!--panel-body-->
-                <h5>5. Modelo de Documentos</h4>
+                <h5>4. Modelo de Documentos</h4>
                 <div class="panel-body condominio-prospectar-panel-body">
                     <table class="flat-table">
                         <thead>
@@ -231,6 +243,107 @@
             <div class="app-page-opcoes">
                 <div class="app-opcoes-button" at="salvar"></div>
                 <div class="app-opcoes-button" at="voltar"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-7 col-sm-7">
+        <div class="app-page-body">
+            <div tabbar-container="geral" class="app-page-tab-content">
+                <h5>Condominios:</h5>
+                <div class="panel-body condominio-prospectar-panel-body">
+                    <table class="flat-table">
+                        <thead>
+                            <tr>
+                                <th style="width:20%">Status</th>
+                                <th style="width:6%">Nota</th>
+                                <th style="width:37%">Condominio</th>
+                                <th style="width:37%">COS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div pillar-view-controller="true" title="Not rated yet!">
+                                        <img alt="1" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">&nbsp;
+                                        <img alt="2" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">&nbsp;
+                                        <img alt="3" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">&nbsp;
+                                        <img alt="4" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">&nbsp;
+                                        <img alt="5" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">
+                                        <input name="score" type="hidden" readonly="">
+                                    </div>
+                                </td>
+                                <td>10</td>
+                                <td>Flora do Mattos</td>
+                                <td>Cos de Ribeirão Preto</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div pillar-view-controller="true" title="Not rated yet!">
+                                        <img alt="1" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">&nbsp;
+                                        <img alt="2" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">&nbsp;
+                                        <img alt="3" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">&nbsp;
+                                        <img alt="4" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">&nbsp;
+                                        <img alt="5" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">
+                                        <input name="score" type="hidden" readonly="">
+                                    </div>
+                                </td>
+                                <td>10</td>
+                                <td>Flora do Mattos</td>
+                                <td>Cos de Ribeirão Preto</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div pillar-view-controller="true" title="Not rated yet!">
+                                        <img alt="1" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">&nbsp;
+                                        <img alt="2" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">&nbsp;
+                                        <img alt="3" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">&nbsp;
+                                        <img alt="4" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">&nbsp;
+                                        <img alt="5" src="http://teste.local/public/lib/rating/images/star-off.png" title="Not rated yet!">
+                                        <input name="score" type="hidden" readonly="">
+                                    </div>
+                                </td>
+                                <td>10</td>
+                                <td>Flora do Mattos</td>
+                                <td>Cos de Ribeirão Preto</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <!--panel-body-->
+                <h5>Informações de Contato:</h5>
+                <div class="panel-body condominio-prospectar-panel-body">
+                    <table class="flat-table">
+                        <thead>
+                            <tr>
+                                <th style="width:25%">Data e hora</th>
+                                <th style="width:75%">Observação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>07/03/2016 as 15:00 </td>
+                                <td>
+                                    Pediu para ligar dia 09/03/2016 as 16:00, teve muito intereçe, um cliente potencial.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="panel-body">
+                        <div class="form-group col-sm-12">
+                            <div at="observacao"></div>
+                        </div>
+                        <div class="app-opcoes-button">
+                        <div class="ui-button">
+                            <button at="button" title="" class="btn btn-sm button cinza">
+                                <span at="label">Salvar Observação</span>
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
