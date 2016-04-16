@@ -8,7 +8,7 @@ yum.define([
         instances: function(){
             this.view = new Mvc.View('<div> <div at="select"></div> </div>');
             
-            this.select = new UI.SelectionBox({label: 'Permissão'});
+            this.select = new UI.SelectionBox({label: 'Selecione'});
         },
         
         viewDidLoad: function(){

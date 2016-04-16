@@ -24,6 +24,12 @@
 	display: inline-block;
 }
 
+.condominio-prospectar-status {
+    width: 235px;
+    display: inline-block;
+    margin-left: 219px;
+}
+
 
 
 /*.condominio-prospectar-panel-body table tr td ul {
