@@ -8,6 +8,8 @@ yum.define([
         instances: function() {
             this.view = new Mvc.View(html);
 
+            this.status = new Condominio.Status.Select();
+
             this.title = 'Pesquisa Prospecto';
 
             this.observacao = new UI.RichText({

@@ -3,6 +3,8 @@
 	PI.Url.create('Condominio', '/page/page.css'),
 	PI.Url.create('Condominio', '/historico/painel.js'),
 	PI.Url.create('Condominio', '/campanha/painel.js'),
+	PI.Url.create('Condominio', '/status/select.js'),
+    
     PI.Url.create('Administradora', '/textbox/textbox.js'),
     
     PI.Url.create('Lib', '/rating/rating.js')
